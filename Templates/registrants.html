@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Registrants{% endblock %}
+{% block content %}
+<ul>
+    {% for r in registrants %}
+    <li>{{r}} is registered in {{registrants[r]}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

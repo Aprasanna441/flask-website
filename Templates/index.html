@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{% if message %}
+{{message}} <a href="/register">Go back to home page.</a><br>
+{% else %}
+
+{% endif %}
+    <form action="/register" method="post">
+        
+        <input type="text" name="firstname" placeholder="Name">
+        <select name="sport" id="sport">
+            <option disabled selected>Sports</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Ultimate Frisbee">Ultimate Frisbee</option>
+            
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
