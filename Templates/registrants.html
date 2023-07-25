@@ -3,7 +3,7 @@
 {% block content %}
 <ul>
     {% for r in registrants %}
-    <li>{{r}} is registered in {{registrants[r]}}</li>
+    <li>{{r.name}} is registered in {{r.sport}}</li>
     {% endfor %}
 </ul>
 {% endblock %}
